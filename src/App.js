@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from "./Components/Form";
+import Render from "./Components/Render";
+import "./style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" id="darkmode">
+      <div className="row x_center y_center"   >
+        <div className="col_md_8" id="nexus">
+          <h1>React Sample text Generator</h1>
+          <br />
+          <Form/>
+         <Render/>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+/*
+
+Gereksinimler
+Başlangıçta 4 paragraf gösterilmelidir.
+Paragraf sayısı bir input aracılığıyla değiştirilebilmelidir.
+En az bir paragraf seçilebilmelidir.
+Paragraflar bir dropdown aracılığıyla text veya html olarak gösterilebilmelidir.
+
+*/
